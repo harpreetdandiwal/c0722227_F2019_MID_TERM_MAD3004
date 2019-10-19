@@ -28,7 +28,9 @@ class customer :IDisplay{
 
     }
     var email : String?
-    
+    init(<#parameters#>) {
+        <#statements#>
+    }
     
 }
 
