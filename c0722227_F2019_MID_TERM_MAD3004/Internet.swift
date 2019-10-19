@@ -12,7 +12,9 @@ class Internet:bill
 {
     var provider :String?
     var Internetusage:Int
-    init(billID:Int,billdate:Date,totalamonut:Float,types:billtypes,provider:String,Internetusage:Int) {
+    init(billID:Int,billdate:Date,totalamonut:Float,types:billtypes,provider:String,Internetusage:Int)
+    {
         
+        super.init(billId: billId ?? ,billId: <#Int#>, billdate:billdate, totalamount:totalamonut, types:billtypes)
     }
 }

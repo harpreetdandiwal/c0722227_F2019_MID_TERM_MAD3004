@@ -7,11 +7,10 @@
 //
 
 import Foundation
-class bill: IDisplay
+class bill:IDisplay
 {
-    func Display() {
-        <#code#>
-    }
+  
+    
     
     var billId:Int?
     var billdate = Date()
@@ -31,11 +30,12 @@ class bill: IDisplay
         self.totalamount = totalamount
         self.types = types
     }
-    func display()
-    {
-        print("bill ID: \(billId)")
-             print("bill date \(billdate)")
+  
+    func Display() {
+        print("bill ID: \(String(describing: billId))")
+        print("bill date \(billdate)")
         print("bill type:\(types)")
-        print("bill amount :\(totalamount)")
+        print("bill amount :\(String(describing: totalamount))")
     }
+    
 }
