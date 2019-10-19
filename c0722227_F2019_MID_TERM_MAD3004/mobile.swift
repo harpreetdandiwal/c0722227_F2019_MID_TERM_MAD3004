@@ -16,7 +16,7 @@ class mobile: bill
     var minutesusage:Int?
      init(billId: Int, billdate: Date, totalamount: Float, types: billtypes,manufacturer:String,plan:Int,mobilenumber:Int,internetusage:Int,minuteusage:Int)
      {
-        super.init(billId: Int, billdate: Date, totalamount: Float, types: bill.billtypes)
+        super.init(billId: billId, billdate: billdate, totalamount: totalamount, types:billtypes)
         self.manufacturer = manufacturer
         self.plan = plan
         self.mobilenumber = mobilenumber

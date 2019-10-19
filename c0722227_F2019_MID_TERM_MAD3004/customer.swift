@@ -28,10 +28,15 @@ class customer :IDisplay{
 
     }
     var email : String?
-    init(<#parameters#>) {
-        <#statements#>
-    }
+    init(customerID:Int,firstname:String,Lastname:String,fullname:String)
+    {
+        self.customerID = customerID
+        self.firstname = firstname
+        self.lastname = Lastname
+        self.email = email!
     
+    }
 }
+
 
 

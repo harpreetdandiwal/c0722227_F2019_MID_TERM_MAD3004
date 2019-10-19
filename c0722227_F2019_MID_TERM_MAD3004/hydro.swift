@@ -12,7 +12,7 @@ class hydro :bill{
     var unitsused : Int?
      init(billId: Int, billdate: Date, totalamount: Float, types: billtypes,providername:String,unitused:Int)
     {
-     super.init(billId: Int, billdate: Date, totalamount: Float, types: bill.billtypes)
+     super.init(billId: billId, billdate: billdate, totalamount: totalamount, types:billtypes)
         self.providername = providername
         self.unitsused = unitused
     }
