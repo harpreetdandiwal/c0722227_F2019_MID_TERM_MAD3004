@@ -29,6 +29,9 @@ class bill: IDisplay
     }
     func display()
     {
-        
+        print("bill ID: \(billId)")
+             print("bill date \(billdate)")
+        print("bill type:\(types)")
+        print("bill amount :\(totalamount)")
     }
 }
