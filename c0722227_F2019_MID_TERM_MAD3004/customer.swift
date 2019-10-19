@@ -8,11 +8,16 @@
 
 import Foundation
 class customer :IDisplay{
+    func Display() {
+        <#code#>
+    }
+    
   
     
     var customerID:Int?
     var firstname:String = ""
+    var lastname : String?
+    
 }
-func Display() {
-    <#code#>
-}
+
+
