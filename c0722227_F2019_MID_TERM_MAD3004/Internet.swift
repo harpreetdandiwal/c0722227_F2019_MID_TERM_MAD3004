@@ -15,7 +15,7 @@ class Internet:bill
     init(billID:Int,billdate:Date,totalamonut:Float,types:billtypes,provider:String,Internetusage:Int)
     {
         
-        super.init( billId: billID, billdate:billdate, totalamount:totalamonut, types:billtypes)
+        super.init( billId:Int, billdate:Date, totalamount:Float, types:billtypes)
         self.provider = provider
         self.Internetusage = Internetusage
     }

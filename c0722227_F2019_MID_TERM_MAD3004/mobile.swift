@@ -16,7 +16,20 @@ class mobile: bill
     var minutesusage:Int?
      init(billId: Int, billdate: Date, totalamount: Float, types: billtypes,manufacturer:String,plan:Int,mobilenumber:Int,internetusage:Int,minuteusage:Int)
      {
-        <#code#>
+        super.init(billId: <#T##Int#>, billdate: <#T##Date#>, totalamount: <#T##Float#>, types: <#T##bill.billtypes#>)
+        self.manufacturer = manufacturer
+        self.plan = plan
+        self.mobilenumber = mobilenumber
+        self.internetusage = internetusage
+        self.minutesusage =  minuteusage
     }
-    
+    override func Display()
+    {
+        super.Display()
+        print("manufacturer:\(manufacturer!)")
+        print("plan is :\(plan!)")
+        print("mobile number is :\(mobilenumber!)")
+        print("internet usage :\(internetusage!)")
+        print("minutes used :\(minutesusage!)")
+    }
 }
