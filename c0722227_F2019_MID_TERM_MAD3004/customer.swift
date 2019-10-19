@@ -17,7 +17,16 @@ class customer :IDisplay{
     var customerID:Int?
     var firstname:String = ""
     var lastname : String?
-    
+    var fullname : String?
+    {
+        var fullName : String{
+            
+            return firstname + " " + lastname!
+            
+        }
+        
+
+    }
 }
 
 

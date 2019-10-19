@@ -15,12 +15,12 @@ class Internet:bill
     init(billID:Int,billdate:Date,totalamonut:Float,types:billtypes,provider:String,Internetusage:Int)
     {
         
-        super.init( billId:Int, billdate:Date, totalamount:Float, types:billtypes)
+        super.init( billId:billID, billdate:billdate, totalamount:totalamount, types:billtypes)
         self.provider = provider
         self.Internetusage = Internetusage
     }
     override func Display() {
-        print("provider name :\(provider))")
-        print("Internet usage:\(Internetusage)")
+        print("provider name :\(provider!))")
+        print("Internet usage:\(Internetusage!)")
     }
 }
