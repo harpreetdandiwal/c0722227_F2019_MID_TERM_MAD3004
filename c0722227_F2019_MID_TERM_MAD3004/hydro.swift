@@ -7,6 +7,6 @@
 //
 
 import Foundation
-hydro :bill{
+class hydro :bill{
     
 }
