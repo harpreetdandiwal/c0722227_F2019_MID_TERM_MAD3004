@@ -50,9 +50,12 @@ class customer :IDisplay{
             print("email id :\(email!)")
             print( "     bill information      ")
             print( "*****************************")
-            
-            
         }
+        if bill.is empty
+        {
+            print("nothing to pay")
+        }
+        
     }
 }
 
