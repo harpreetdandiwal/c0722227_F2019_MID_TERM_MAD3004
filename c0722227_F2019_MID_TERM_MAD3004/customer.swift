@@ -34,6 +34,7 @@ class customer :IDisplay{
         self.firstname = firstname
         self.lastname = Lastname
         self.email = email!
+        var billDictionary = [Int:bill]()
     
     }
     func calctotal() ->Float
@@ -41,7 +42,7 @@ class customer :IDisplay{
         var sum: Float = 0.0
         for j in billDictionary.values
         {
-            return totalbillamount
+            sum += j.billamount!
         }
         func display()
         {
