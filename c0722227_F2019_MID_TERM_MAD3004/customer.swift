@@ -27,6 +27,9 @@ class customer :IDisplay{
         
 
     }
+    var email : String?
+    
+    
 }
 
 
