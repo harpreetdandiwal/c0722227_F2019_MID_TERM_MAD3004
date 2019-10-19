@@ -45,9 +45,9 @@ class customer :IDisplay{
         }
         func display()
         {
-            print("custromer id :\(customerID)")
-            print("full name :\(fullname)")
-            print("email id :\(email)")
+            print("custromer id :\(customerID!)")
+            print("full name :\(fullname!)")
+            print("email id :\(email!)")
             print( "     bill information      ")
             print( "*****************************")
             
