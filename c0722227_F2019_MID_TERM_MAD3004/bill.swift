@@ -15,7 +15,7 @@ class bill:IDisplay
     var billId:Int?
     var billdate = Date()
     var totalamount: Float?
-    var types:billtypes
+    
     enum billtypes
     {
         case internet
@@ -23,6 +23,7 @@ class bill:IDisplay
         case mobile
         
     }
+    var types:billtypes
     init(billId:Int,billdate:Date,totalamount:Float,types:billtypes) {
         
         self.billId = billId

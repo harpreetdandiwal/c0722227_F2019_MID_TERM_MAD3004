@@ -36,6 +36,24 @@ class customer :IDisplay{
         self.email = email!
     
     }
+    func calctotal() ->Float
+    {
+        var sum: Float = 0.0
+        for j in billDictionary.values
+        {
+            return totalbillamount
+        }
+        func display()
+        {
+            print("custromer id :\(customerID)")
+            print("full name :\(fullname)")
+            print("email id :\(email)")
+            print( "     bill information      ")
+            print( "*****************************")
+            
+            
+        }
+    }
 }
 
 
