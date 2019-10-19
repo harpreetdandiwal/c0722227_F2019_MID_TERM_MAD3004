@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class bill:IDisplay
+class bill: IDisplay
 {
     var billId:Int?
     var billdate = Date()
@@ -15,6 +15,16 @@ class bill:IDisplay
     var types:
     enum billtypes
     {
+        case internet
+        case hydro
+        case mobile
         
+    }
+    init(billId:Int,billdate:Date,totalamount:float) {
+        
+        self.billId = billId
+        self.billdate = billdate
+        self.totalamount = totalamount
+        self.types = types
     }
 }
