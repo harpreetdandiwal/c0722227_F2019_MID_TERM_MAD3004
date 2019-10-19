@@ -13,6 +13,7 @@
 		9BF74EB2235BC17000E21517 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF74EB1235BC17000E21517 /* Internet.swift */; };
 		9BF74EB4235BC78100E21517 /* mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF74EB3235BC78100E21517 /* mobile.swift */; };
 		9BF74EB6235BCBE200E21517 /* hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF74EB5235BCBE200E21517 /* hydro.swift */; };
+		9BF74EB8235BCDD600E21517 /* customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF74EB7235BCDD600E21517 /* customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		9BF74EB1235BC17000E21517 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		9BF74EB3235BC78100E21517 /* mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile.swift; sourceTree = "<group>"; };
 		9BF74EB5235BCBE200E21517 /* hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hydro.swift; sourceTree = "<group>"; };
+		9BF74EB7235BCDD600E21517 /* customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				9BF74EB1235BC17000E21517 /* Internet.swift */,
 				9BF74EB3235BC78100E21517 /* mobile.swift */,
 				9BF74EB5235BCBE200E21517 /* hydro.swift */,
+				9BF74EB7235BCDD600E21517 /* customer.swift */,
 			);
 			path = c0722227_F2019_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			files = (
 				9BF74EAE235BBA9800E21517 /* bill.swift in Sources */,
 				9BF74EB4235BC78100E21517 /* mobile.swift in Sources */,
+				9BF74EB8235BCDD600E21517 /* customer.swift in Sources */,
 				9BF74EA7235BB9F000E21517 /* main.swift in Sources */,
 				9BF74EB2235BC17000E21517 /* Internet.swift in Sources */,
 				9BF74EB6235BCBE200E21517 /* hydro.swift in Sources */,
