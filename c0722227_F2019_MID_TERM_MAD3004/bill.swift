@@ -9,10 +9,14 @@
 import Foundation
 class bill: IDisplay
 {
+    func Display() {
+        <#code#>
+    }
+    
     var billId:Int?
     var billdate = Date()
-    var totalamount:float?
-    var types:
+    var totalamount: Float?
+    var types:billtypes
     enum billtypes
     {
         case internet
@@ -20,7 +24,7 @@ class bill: IDisplay
         case mobile
         
     }
-    init(billId:Int,billdate:Date,totalamount:float) {
+    init(billId:Int,billdate:Date,totalamount:Float,types:billtypes) {
         
         self.billId = billId
         self.billdate = billdate
