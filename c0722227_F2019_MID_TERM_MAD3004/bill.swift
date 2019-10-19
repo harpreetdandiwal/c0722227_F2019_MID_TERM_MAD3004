@@ -27,4 +27,8 @@ class bill: IDisplay
         self.totalamount = totalamount
         self.types = types
     }
+    func display()
+    {
+        
+    }
 }
