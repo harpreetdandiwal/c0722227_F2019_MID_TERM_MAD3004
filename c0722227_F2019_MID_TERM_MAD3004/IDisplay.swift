@@ -8,7 +8,7 @@
 
 import Foundation
 protocol  IDisplay{
-    func Display()
+    func display()
     
     }
     

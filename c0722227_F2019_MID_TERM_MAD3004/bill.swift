@@ -6,37 +6,34 @@
 //  Copyright © 2019 MacStudent. All rights reserved.
 //
 
+
 import Foundation
-class bill:IDisplay
+ class Bill: IDisplay
 {
-  
     
-    
-    var billId:Int?
-    var billdate = String()
-    var totalamount: Float?
-    var billType:Types
-    enum Types
-    {
-        case internet
-        case hydro
-        case mobile
-        
+     var billId: Int
+     var billDate = String()
+     var billType: TypeofBills
+     enum TypeofBills{
+        case Internet
+        case Hydro
+        case Mobile
     }
+    var billAmount: Float
     
-    init(billId:Int,billdate:String, billType: Types)
-    {
+    
+     init(billId: Int, billDate: String, billType: TypeofBills, billAmount: Float) {
         self.billId = billId
-        self.billdate = billdate
-        //self.totalamount = totalamount
+        self.billDate = billDate
+        self.billAmount  = billAmount
         self.billType = billType
     }
-  
-    func Display() {
-        print("bill ID: \(String(describing: billId))")
-        print("bill date \(billdate)")
-        print("bill type:\(billType)")
-        print("bill amount :\(String(describing: totalamount))")
+    
+     func display(){
+        print("Bill ID: \(billId)")
+        print("Bill Date: \(billDate)")
+        print("Bill Type: \(billType)")
+        print("Bill Amount: \(billAmount.currencyFormat())")
     }
     
 }

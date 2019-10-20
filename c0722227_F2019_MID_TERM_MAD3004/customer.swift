@@ -7,60 +7,75 @@
 //
 
 import Foundation
-class Customer :IDisplay{
-   var customerID:Int?
-    var firstname:String = ""
-    var lastname : String?
-    var fullname : String?
+import Foundation
+class Customer: IDisplay{
+    var customerId: Int
+    var firstName: String
+    var lastName: String
+    var fullName: String
     {
-        var fullName : String{
-            
-            return firstname + " " + lastname!
-            
+        get{
+            return "\(firstName) \(lastName)"
         }
-        
-
     }
-    var email : String?
-var billDictionary = [Int:bill]()
-    init(customerID:Int,firstname:String,Lastname:String, email : String?)
-    {
-        self.customerID = customerID
-        self.firstname = firstname
-        self.lastname = Lastname
-        self.email = email!
-        
+    var emailId: String
+    var totalBillAmount: Float = 0.0
     
+    var billDictionary = [Int:Bill]()
+    
+    //billDictionary.updateValue(Bill, forKey: billId )
+    
+    
+    init(customerId: Int, firstName: String, lastName: String ,  emailId: String) {
+        self.customerId = customerId
+        self.firstName = firstName
+        self.lastName = lastName
+        self.emailId = emailId
+        }
+   
+       func addBillToCustomer(b:Bill){
+        billDictionary.updateValue(b, forKey: b.billId)
     }
-    func calctotal() ->Float
+    
+      func calcTotalBillAmount() -> Float
     {
-        var sum: Float = 0.0
-        for j in billDictionary.values
+        //totalBillAmount = 0
+        for i in billDictionary.values
         {
-            sum += j.billamount!
+            totalBillAmount += i.billAmount
         }
-        func display()
+        return Float(totalBillAmount)
+    }
+    
+      func display() {
+        print("\t")
+         print("------CUSTOMER INFORMATION---------")
+        print("Customer ID: \(customerId)")
+         print("Customer Name: \(fullName)")
+         print("Email Id: \(emailId)")
+        // print("Customer ID: \(customerId)")
+        
+       
+        print("------BILL INFORMATION---------")
+        print("*********************************************")
+        if billDictionary.isEmpty
         {
-            print("custromer id :\(customerID!)")
-            print("full name :\(fullname!)")
-            print("email id :\(email!)")
-            print( "     bill information      ")
-            print( "*****************************")
+            print(" This Customer has no Bills to pay")
         }
-        if bill.is empty{
+        else
         {
-            print("nothing to pay")
-        }else {
-            for j in billDictionary.values
+            for b in billDictionary.values
+                
             {
-                j.Display()
+                b.display()
+                print("*****************************************")
                 
             }
-            print("total bill amount to pay:\(self.calctotal())")
-        }
+            print("Total Bill Amount to Pay: \(calcTotalBillAmount().currencyFormat())")
+            print("########################################")
         
     }
-
-
-
+    
+     
+}
 }

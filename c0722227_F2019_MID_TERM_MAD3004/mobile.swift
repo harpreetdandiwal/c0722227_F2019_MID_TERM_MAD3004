@@ -6,30 +6,34 @@
 //  Copyright © 2019 MacStudent. All rights reserved.
 //
 
+
 import Foundation
-class mobile: bill
-{
-    var manufacturer:String?
-    var plan:Int?
-    var mobilenumber:Int?
-    var internetusage:Int?
-    var minutesusage:Int?
-     init(billId: Int, billdate: String, types:billtypes,manufacturer:String,plan:Int,mobilenumber:Int,internetusage:Int,minuteusage:Int)
-     {
-        super.init(billId: billId, billdate: billdate, types:.billtypes)
-        self.manufacturer = manufacturer
+class Mobile:Bill{
+    
+    var mobileManufacturer: String
+    var plan: String
+    var mobileNum: Int
+    var internetUsed: Int
+    var minutesUsed: Int
+    
+    init(billId: Int, billDate: String , billType: TypeofBills, billAmount: Float, mobileManufacturer: String,plan: String, mobileNum: Int,internetUsed: Int, minutesUsed: Int) {
+        
+        self.mobileManufacturer = mobileManufacturer
         self.plan = plan
-        self.mobilenumber = mobilenumber
-        self.internetusage = internetusage
-        self.minutesusage =  minuteusage
+        self.mobileNum = mobileNum
+        self.internetUsed = internetUsed
+        self.minutesUsed = minutesUsed
+        super.init(billId: billId, billDate:billDate, billType: billType, billAmount: billAmount)
     }
-    override func Display()
-    {
-        super.Display()
-        print("manufacturer:\(manufacturer!)")
-        print("plan is :\(plan!)")
-        print("mobile number is :\(mobilenumber!)")
-        print("internet usage :\(internetusage!)")
-        print("minutes used :\(minutesusage!)")
+    override func display() {
+        super.display()
+        print("Manufactuer Name : \(mobileManufacturer)")
+        print("Plan Name: \(plan)")
+        print("Mobile Number: \(mobileNum)")
+        print("Internet Used: \(internetUsed.conactGB())")
+        print("Minutes Used: \(minutesUsed.concatMin())")
+        
     }
+    
+    
 }
