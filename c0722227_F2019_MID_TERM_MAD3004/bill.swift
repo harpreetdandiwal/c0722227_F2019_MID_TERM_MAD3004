@@ -13,7 +13,7 @@ class bill:IDisplay
     
     
     var billId:Int?
-    var billdate = Date()
+    var billdate = String()
     var totalamount: Float?
     
     enum billtypes
@@ -24,11 +24,11 @@ class bill:IDisplay
         
     }
     var types:billtypes
-    init(billId:Int,billdate:Date,totalamount:Float,types:billtypes)
+    init(billId:Int,billdate:String,types:billtypes)
     {
         self.billId = billId
         self.billdate = billdate
-        self.totalamount = totalamount
+        //self.totalamount = totalamount
         self.types = types
     }
   

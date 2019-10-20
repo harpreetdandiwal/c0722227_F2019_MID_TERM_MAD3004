@@ -12,10 +12,10 @@ class Internet:bill
 {
     var provider :String?
     var Internetusage:Int
-    init(billID:Int,billdate:Date,totalamonut:Float,types:billtypes,provider:String,Internetusage:Int)
+    init(billID:Int,billdate:String,  types:billtypes,provider:String,Internetusage:Int)
     {
         
-        super.init( billId:billID, billdate:billdate, totalamount:totalamonut, types:billtypes)
+        super.init( billId:billID, billdate: billdate, types:types)
         self.provider = provider
         self.Internetusage = Internetusage
     }

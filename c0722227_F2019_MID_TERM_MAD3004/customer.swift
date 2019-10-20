@@ -12,6 +12,9 @@ class customer :IDisplay{
         <#code#>
     }
     
+    
+    }
+    
   
     
     var customerID:Int?
@@ -52,11 +55,11 @@ class customer :IDisplay{
             print( "     bill information      ")
             print( "*****************************")
         }
-        if bill.is empty
+        if bill.is empty{
         do {
             print("nothing to pay")
         }
-        else{
+            elsedo {
             for j in billDictionary.values
             {
                 j.Display()
@@ -66,7 +69,7 @@ class customer :IDisplay{
         }
         
     }
+
+
+
 }
-
-
-
