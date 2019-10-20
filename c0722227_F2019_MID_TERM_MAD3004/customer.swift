@@ -53,8 +53,16 @@ class customer :IDisplay{
             print( "*****************************")
         }
         if bill.is empty
-        {
+        do {
             print("nothing to pay")
+        }
+        else{
+            for j in billDictionary.values
+            {
+                j.Display()
+                
+            }
+            print("total bill amount to pay:\(self.calctotal())")
         }
         
     }

@@ -24,8 +24,8 @@ class bill:IDisplay
         
     }
     var types:billtypes
-    init(billId:Int,billdate:Date,totalamount:Float,types:billtypes) {
-        
+    init(billId:Int,billdate:Date,totalamount:Float,types:billtypes)
+    {
         self.billId = billId
         self.billdate = billdate
         self.totalamount = totalamount

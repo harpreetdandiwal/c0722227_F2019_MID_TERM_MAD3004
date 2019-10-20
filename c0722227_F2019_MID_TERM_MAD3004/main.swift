@@ -7,6 +7,6 @@
 //
 
 import Foundation
-
-
+var cus1 = customer(customerID: 01, firstname: "harpreet", Lastname: "singh", email:"dandiwal357@gmail.com")
+var internet1 = Internet(billID: 1, billDate: "1/2/2019", billType:.Internet, totalAmount: 50.11, providerName: "bsnl", internet: 45)
 
