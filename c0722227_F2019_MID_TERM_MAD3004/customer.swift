@@ -7,17 +7,8 @@
 //
 
 import Foundation
-class customer :IDisplay{
-    func Display() {
-        <#code#>
-    }
-    
-    
-    }
-    
-  
-    
-    var customerID:Int?
+class Customer :IDisplay{
+   var customerID:Int?
     var firstname:String = ""
     var lastname : String?
     var fullname : String?
@@ -31,13 +22,14 @@ class customer :IDisplay{
 
     }
     var email : String?
-    init(customerID:Int,firstname:String,Lastname:String,fullname:String)
+var billDictionary = [Int:bill]()
+    init(customerID:Int,firstname:String,Lastname:String, email : String?)
     {
         self.customerID = customerID
         self.firstname = firstname
         self.lastname = Lastname
         self.email = email!
-        var billDictionary = [Int:bill]()
+        
     
     }
     func calctotal() ->Float
@@ -56,10 +48,9 @@ class customer :IDisplay{
             print( "*****************************")
         }
         if bill.is empty{
-        do {
+        {
             print("nothing to pay")
-        }
-            elsedo {
+        }else {
             for j in billDictionary.values
             {
                 j.Display()

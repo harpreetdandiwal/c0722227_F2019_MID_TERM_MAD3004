@@ -15,27 +15,27 @@ class bill:IDisplay
     var billId:Int?
     var billdate = String()
     var totalamount: Float?
-    
-    enum billtypes
+    var billType:Types
+    enum Types
     {
         case internet
         case hydro
         case mobile
         
     }
-    var types:billtypes
-    init(billId:Int,billdate:String,types:billtypes)
+    
+    init(billId:Int,billdate:String, billType: Types)
     {
         self.billId = billId
         self.billdate = billdate
         //self.totalamount = totalamount
-        self.types = types
+        self.billType = billType
     }
   
     func Display() {
         print("bill ID: \(String(describing: billId))")
         print("bill date \(billdate)")
-        print("bill type:\(types)")
+        print("bill type:\(billType)")
         print("bill amount :\(String(describing: totalamount))")
     }
     

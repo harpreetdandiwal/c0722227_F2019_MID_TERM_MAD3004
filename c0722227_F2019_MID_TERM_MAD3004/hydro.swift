@@ -10,9 +10,9 @@ import Foundation
 class hydro :bill{
     var providername : String = ""
     var unitsused : Int?
-     init(billId: Int, billdate: Date, totalamount: Float, types: billtypes,providername:String,unitused:Int)
+     init(billId: Int, billdate: String, types: billtypes,providername:String,unitused:Int)
     {
-     super.init(billId: billId, billdate: billdate, totalamount: totalamount, types:billtypes)
+     super.init(billId: billId, billdate: billdate, types:billtypes)
         self.providername = providername
         self.unitsused = unitused
     }
